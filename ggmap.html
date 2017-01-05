@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>谷歌地图</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP-tbt6uQ9pcIVOemiQhINGgKxEI059E4&callback=initMap"></script>
+    <script src="googleMap.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #mapContainer{
+            height: 600px;
+            border:1px solid #f60;
+        }
+    </style>
+	<meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            initMap(37.706334, 112.728980, "标题a", "这里是内容");
+        }
+    </script>
+</head>
+<body>
+    <div id="mapContainer"></div>
+</body>
+</html>
