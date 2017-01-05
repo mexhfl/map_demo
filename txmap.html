@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>腾讯地图</title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        /*地图容器*/
+        #mapcontainer {
+            min-width: 600px;
+            min-height: 767px;
+            font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
+        }
+        /*地图容器细节*/
+        #mapcontainer *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /*提示框标题*/
+        #mapMsgbox>h3{
+            color:#555;
+        }
+        /*提示框内容*/
+        #mapMsgbox>p{
+            padding-top:5px;
+            text-align:center;
+            color:#888;
+        }
+    </style>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=F2DBZ-3CXCF-DKJJA-JQ5ON-ONLDT-J2BQX"></script>
+    <script src="tencentMap.js"></script>
+    <script>
+        window.onload = function(){
+              createMap(37.707217, 112.728814, "山西省晋中市榆次区定阳路71号", "乘坐6,901路公交直达");
+        }
+    </script>
+</head>
+<body>
+    <div id="mapcontainer"></div>
+</body>
+</html>
