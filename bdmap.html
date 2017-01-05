@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>百度地图</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=E463b3a06f454a9478940abcb944afca"></script>
+    <script src="baiduMap.js"></script>
+    <style>
+        #mapContainer{
+            width:100%;
+            height:200px;
+            border:1px solid #f60;
+        }
+    </style>
+    <script>
+
+        window.onload = function () {
+            createMap(112.735643,37.71222,"榆次区定阳路71号","乘坐6路,901路可直达");
+        }
+    </script>
+</head>
+<body>
+    <div id="mapContainer"></div>
+</body>
+</html>
